@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <div class="container">
+    <form type="card" onsubmit="return false">
+     <label for="fname"><p>Name</p></label>   
+     <input type="text" id="fname" placeholder="Enter your first name"><br>
+     <label for="fname"><p>Surname</p></label>
+     <input type="text" id="lname" placeholder="Enter your last name"><br>
+     <label for="email"><p>Email</p></label>
+     <input type="email" id="email" placeholder="Enter your email">
+     <label for="occupation"><p>Occupation</p></label>
+     <input type="text" id="occupation" placeholder="Enter your occupation"><br>
+     <label for="county"><p>Country</p></label>
+     <select name="country" id="country"><br>
+        <option value="Select country">Select country</option>
+        <option value="South Africa"><p>South Africa</p></option>
+        <option value="Botswana">Botswana</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Swaziland">Swaziland</option>
+     </select><br>
+    <input type="submit" value="submit" onclick="getFormValues()">
+    </form>
+    </div>
+</body>
+</html>
